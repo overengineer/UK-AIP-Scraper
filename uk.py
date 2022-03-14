@@ -29,7 +29,7 @@ def pdf_links():
     current = page.xpath('//img[contains(@title, "CURRENT")]/../@href')[0]
     print(current)
     date = re.search(r".*/([0-9\-]+)\-[^0-9]+/.*", current).group(1)
-    folder = rf"pdf\{date}"
+    folder = os.path.join("pdf", date)
     os.makedirs(folder, exist_ok=True)
     for title in titles:
         path = os.path.join(folder, f"EG-{title}-en-GB.pdf")
