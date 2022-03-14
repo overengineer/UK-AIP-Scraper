@@ -2,7 +2,6 @@ import os.path, re, time
 import requests
 import lxml.html
 
-chromedriver_path = r"C:\Users\z004dn0z\chromedriver.exe"
 uk_base_url = "https://nats-uk.ead-it.com/cms-nats/opencms/en/Publications/AIP/"
 pdf_url_templ = "https://www.aurora.nats.co.uk/htmlAIP/Publications/{date}-AIRAC/pdf/EG-{title}-en-GB.pdf"
 titles = ['ENR-3.3', 'AD-2.EGEW', 'AD-2.EGBE', 'AD-2.EGNF', 'AD-2.EGES', 'AD-2.EGEN', 'AD-2.EGKK', 'AD-2.EGPN', 'AD-2.EGHF', 'AD-2.EGPB', 'AD-2.EGSH', 'ENR-1.11', 
